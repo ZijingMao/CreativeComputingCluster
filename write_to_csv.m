@@ -3,8 +3,8 @@ filename = 'ClusterResult.csv';
 
 % start write string to file
 fid = fopen(filename,'w');
-header_string = headers{1};
 headers = cellstr(motivation);
+header_string = headers{1};
 for i = 2:length(headers)
     header_string = [header_string,',',headers{i}];
 end
